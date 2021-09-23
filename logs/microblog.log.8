@@ -1,0 +1,94 @@
+2021-09-17 17:52:04,990 ERROR: Exception on /user/wuyan7 [GET] [in c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\ThinkPad\PycharmProjects\microblog\app\routes.py", line 86, in user
+    return render_template('user.html', user=user, posts=posts)
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\jinja2\loaders.py", line 137, in load
+    code = environment.compile(source, name, filename)
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 757, in compile
+    self.handle_exception(source=source_hint)
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\ThinkPad\PycharmProjects\microblog\app\templates\user.html", line 21, in template
+    {% endif not current_user.is_following(user) %}
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got 'not'
+2021-09-17 17:52:05,578 ERROR: Exception on /user/wuyan7 [GET] [in c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\ThinkPad\PycharmProjects\microblog\app\routes.py", line 86, in user
+    return render_template('user.html', user=user, posts=posts)
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\jinja2\loaders.py", line 137, in load
+    code = environment.compile(source, name, filename)
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 757, in compile
+    self.handle_exception(source=source_hint)
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\ThinkPad\PycharmProjects\microblog\app\templates\user.html", line 21, in template
+    {% endif not current_user.is_following(user) %}
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got 'not'
+2021-09-17 17:52:21,451 ERROR: Exception on /user/wuyan7 [GET] [in c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\ThinkPad\PycharmProjects\microblog\app\routes.py", line 86, in user
+    return render_template('user.html', user=user, posts=posts)
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\jinja2\loaders.py", line 137, in load
+    code = environment.compile(source, name, filename)
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 757, in compile
+    self.handle_exception(source=source_hint)
+  File "c:\users\thinkpad\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\ThinkPad\PycharmProjects\microblog\app\templates\user.html", line 21, in template
+    {% endif not current_user.is_following(user) %}
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got 'not'
+2021-09-17 18:06:01,183 INFO: Microblog startup [in C:\Users\ThinkPad\PycharmProjects\microblog\app\__init__.py:34]
