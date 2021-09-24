@@ -16,3 +16,6 @@ class Config:
 	MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
 	MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')  # 客户端授权密码
 	ADMINS = ['18519597@qq.com']
+	LANGUAGES = ['en', 'zh']
+	APPID = os.environ.get('APPID')
+	BD_TRANSLATOR_KEY = os.environ.get('BD_TRANSLATOR_KEY')
